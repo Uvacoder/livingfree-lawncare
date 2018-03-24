@@ -6,7 +6,8 @@ module.exports = {
   entry: {
     app: [
       './src/js/index.js',
-      './src/scss/styles.scss'
+      './src/scss/styles.scss',
+      './src/img/share.jpg'
     ]
   },
   output: {
