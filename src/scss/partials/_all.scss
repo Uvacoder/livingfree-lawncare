@@ -1,7 +1,21 @@
 // all.scss                         styles/partials
 /////////////////////////////////////////////////////////////////////////
 
+// First imported file is global
+@import "./global"; // This include should first
 
-// Last imported files are global and shame
-@import "./global"; // This include should be next to last
+@import "./sections";
+@import "./top-bar";
+@import "./hero";
+@import "./banner";
+@import "./text";
+@import "./contact";
+@import "./overlay";
+
+
+
+
+
+
+// Last imported file is shame
 @import "./shame"; // This include should be last

@@ -1,0 +1,23 @@
+// text.scss                         styles/partials
+/////////////////////////////////////////////////////////////////////////
+
+.text {
+  background-color: darken($fun-green, 7%);
+}
+
+.text .section-inner {
+  padding: rem-calc(32 16);
+}
+
+.text p {
+  color: $white;
+  font-size: rem-calc(18);
+  text-align: center;
+  margin: 0 auto;
+  &:not(:last-of-type) {
+    margin-bottom: rem-calc(16);
+  }
+  @media #{$medium-up} {
+    width: rem-calc(700);
+  }
+}

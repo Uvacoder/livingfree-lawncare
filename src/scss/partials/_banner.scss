@@ -1,0 +1,15 @@
+// banner.scss                         styles/partials
+/////////////////////////////////////////////////////////////////////////
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: rem-calc(60);
+}
+
+.banner span {
+  font-size: rem-calc(24);
+  line-height: 1.2;
+  color: $white;
+}

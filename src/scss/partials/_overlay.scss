@@ -1,0 +1,53 @@
+// overlay.scss                         styles/partials
+/////////////////////////////////////////////////////////////////////////
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba($black, .7);
+}
+
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay .overlay-inner {
+  width: 90%;
+  max-height: 80%;
+  background-color: $white;
+  padding: rem-calc(32 16);
+  text-align: center;
+  border-radius: rem-calc(16);
+  @media #{$medium-up} {
+    max-width: rem-calc(500);
+  }
+}
+
+.overlay h2 {
+  font-size: rem-calc(32);
+  margin-bottom: rem-calc(32);
+  color: $fun-green;
+}
+
+.overlay p {
+  font-size: rem-calc(20);
+  line-height: 1.4;
+  margin-bottom: rem-calc(32);
+}
+
+.overlay a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: rem-calc(32);
+}
+
+.overlay i {
+  margin-right: rem-calc(8);
+}

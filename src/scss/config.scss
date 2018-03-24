@@ -26,13 +26,20 @@ $xxlarge-range: (120.063em); // 1921px
 // App Setup Variables
 /////////////////////////////////////////////////////////////////////
 
+// Font Families
+$rokkit: 'Rokkitt', serif;
+$opensans: 'Open Sans', sans-serif;
+
 // Base settings
 $base-font-size: 16px;
 $base-font-color: $mine;
-$base-body-font-family: 'Open Sans', sans-serif;
-$base-heading-font-family: 'Rokkitt', serif;
-$html-background-color: $bleu;
+$base-body-font-family: $opensans;
+$base-heading-font-family: $rokkit;
+$html-background-color: $fun-green;
+$max-page-width: rem-calc(1600);
+$main-background-color: $mercury;
+$alt-background-color: $raven;
 
 // Global link styles
-$link-transition: all 150ms ease-in-out;
+$link-transition: all 125ms ease-in-out;
 $link-color: $bleu;

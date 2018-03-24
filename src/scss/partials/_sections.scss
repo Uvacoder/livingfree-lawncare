@@ -1,0 +1,9 @@
+// sections.scss                         styles/partials
+/////////////////////////////////////////////////////////////////////////
+
+section > .section-inner {
+  width: 100%;
+  max-width: $max-page-width;
+  margin: 0 auto;
+  padding: rem-calc(0 16);
+}

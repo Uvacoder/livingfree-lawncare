@@ -5,20 +5,94 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>LivingFree Lawncare</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Rokkitt:400,700" rel="stylesheet">
+  <title>Living Free Lawn Care | Hartselle, AL</title>
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Open+Sans:300,400,700|Rokkitt:400,700" rel="stylesheet">
 </head>
 
 <body>
-  <section class="main">
-    <h1>LivingFree Lawncare</h1>
+  <section class="top-bar">
+    <div class="section-inner">
+      <span>Call Today!</span>
+      <a href="tel:256-466-2883"><i class="material-icons">phone</i> (256) 466-2883</a>
+      <a id="get-quote">Get Free Quote</a>
+    </div>
+  </section>
 
-    <img src="img/webpack-big.png">
-    <img src="img/small-image.png">
+  <section class="hero">
+    <div class="section-inner">
+      <img src="./img/logo-avatar.svg" alt="Living Free">
+      <h1>Living Free</h1>
 
-    <a href="#0">Link one</a>
-    <a href="#0">Link two</a>
+      <h2>Lawn Care</h2>
+
+      <h3>Hartselle, AL Lawn Care</h3>
+      
+    </div>
+  </section>
+
+  <section class="banner">
+    <span>Contract Free Lawn Care</span>
+  </section>
+
+  <section class="text">
+    <div class="section-inner">
+      <p>At Living Free, our customers are our number one priority. When you choose
+        our experts to take care of your lawn services in Hartselle, you can expect
+        to receive the very best customer service in the business.</p>
+      <p>We believe our results speak for themselves, so we offer contract-free
+        lawn care services and flexible scheduling for your convenience.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="section-inner">
+      <h2>Get a Free Quote</h2>
+
+      <div class="myform">
+        <form action="https://formspree.io/bbodine1@gmail.com" method="POST">
+
+          <input type="hidden" name="_subject" value="Living Free Website Quote Request">
+          <input type="hidden" name="_next" value="//thanks.html">
+
+          <div class="form-grid">
+            <div>
+              <input required placeholder="First Name" type="text" name="first_name">
+              <label for="first_name">First Name</label>
+            </div>
+
+            <div>
+              <input required placeholder="Last Name" type="text" name="last_name">
+              <label for="last_name">Last Name</label>
+            </div>
+
+            <div>
+              <input required placeholder="Phone" type="tel" name="phone">
+              <label for="phone">Phone</label>
+            </div>
+
+            <div>
+              <input required placeholder="Email" type="email" name="_replyto">
+              <label for="_replyto">Email</label>
+            </div>
+
+            <div>
+              <input required placeholder="Address" type="text" name="address">
+              <label for="address">Address</label>
+            </div>
+
+            <div>
+              <input required placeholder="City" type="text" name="city">
+              <label for="city">City</label>
+            </div>
+
+            <div class="submit">
+              <span>* All fields are required</span>
+              <button type="submit">Send</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
   </section>
 </body>
-
 </html>

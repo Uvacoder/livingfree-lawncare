@@ -1,0 +1,116 @@
+// contact.scss                         styles/partials
+/////////////////////////////////////////////////////////////////////////
+
+.contact {
+  background-color: $alt-background-color;
+}
+
+.contact .section-inner {
+}
+
+.contact h2 {
+  text-align: center;
+  font-family: $opensans;
+  font-size: rem-calc(24);
+  line-height: rem-calc(60);
+  color: rgba($white, 0.8);
+  margin-bottom: rem-calc(16);
+}
+
+.contact .myform {
+  display: flex;
+  justify-content: center;
+}
+
+.contact .myform form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: $white;
+  width: 100%;
+}
+
+.contact .myform div {
+  position: relative;
+}
+
+.contact input {
+  width: 100%;
+  height: rem-calc(50);
+  background-color: rgba($white, 0.8);
+  border: none;
+  border-radius: rem-calc(8);
+  font-size: rem-calc(24);
+  line-height: rem-calc(50);
+  color: $mine;
+  padding: rem-calc(0 8);
+  margin-top: rem-calc(20);
+}
+
+.contact label {
+  margin-bottom: rem-calc(4);
+  padding-left: rem-calc(8);
+  transition: $link-transition;
+}
+
+.contact input + label {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+
+.contact input:not(:placeholder-shown) + label {
+  opacity: 1;
+}
+
+.contact .submit {
+  display: flex;
+  flex-direction: column;
+  margin-top: rem-calc(20);
+  margin-bottom: rem-calc(60);
+  @media #{$large-up} {
+    grid-column: span 2;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.contact .submit span {
+  color: $warn;
+  font-size: rem-calc(12);
+  margin-left: rem-calc(8);
+  margin-bottom: rem-calc(4);
+  @media #{$large-up} {
+    margin-right: rem-calc(32);
+  }
+}
+
+.contact button {
+  height: rem-calc(50);
+  width: 100%;
+  border: none;
+  border-radius: rem-calc(8);
+  background-color: goldenrod;
+  cursor: pointer;
+  @media #{$large-up} {
+    width: rem-calc(200);
+  }
+}
+
+
+
+
+
+
+.contact .form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  @media #{$large-up} {
+    width: rem-calc(900);
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: rem-calc(20)
+  }
+}
+

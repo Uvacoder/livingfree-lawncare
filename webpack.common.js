@@ -18,6 +18,10 @@ module.exports = {
       template: './src/index.html',
       filename: './index.html'
     }),
+    new HtmlWebPackPlugin({
+      template: './src/thanks.html',
+      filename: './thanks.html'
+    }),
     new ExtractTextPlugin({
       filename: './scss/styles.css'
     })
@@ -90,6 +94,10 @@ module.exports = {
       template: './src/index.html',
       favicon: './src/favicon.ico',
       filename: './index.html'
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/thanks.html',
+      filename: './thanks.html'
     }),
     new ExtractTextPlugin({
       filename: './styles.css'

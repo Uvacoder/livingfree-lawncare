@@ -1,0 +1,78 @@
+// hero.scss                         styles/partials
+/////////////////////////////////////////////////////////////////////////
+
+.hero {
+  background-color: darken($fun-green, 7%);
+}
+
+.hero .section-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: rem-calc(232);
+  position: relative;
+  background-image: url(../img/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @media #{$medium-up} {
+    height: rem-calc(480);
+  }
+}
+
+.hero .section-inner:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba($black, .4);
+}
+
+.hero img {
+  width: rem-calc(41);
+  filter: drop-shadow(rem-calc(2 4 3) rgba($black, .3));
+  z-index: 1;
+  @media #{$medium-up} {
+    width: rem-calc(90);
+  }
+}
+
+.hero h1,
+.hero h2,
+.hero h3 {
+  color: $white;
+  line-height: 1.2;
+  text-shadow: rem-calc(2 4 3) rgba($black, .3);
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: rem-calc(48);
+  font-weight: normal;
+  @media #{$medium-up} {
+    font-size: rem-calc(82);
+  }
+}
+
+.hero h2 {
+  font-size: rem-calc(24);
+  font-family: $opensans;
+  font-weight: 300;
+  margin-bottom: rem-calc(24);
+  @media #{$medium-up} {
+    font-size: rem-calc(38);
+    margin-bottom: rem-calc(48);
+  }
+}
+
+.hero h3 {
+  font-size: rem-calc(18);
+  font-family: $opensans;
+  font-weight: bold;
+  @media #{$medium-up} {
+    font-size: rem-calc(28);
+  }
+}
