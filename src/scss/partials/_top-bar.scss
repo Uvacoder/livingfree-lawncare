@@ -30,6 +30,7 @@ body {
   @media #{$medium-up} {
     display: flex;
     justify-content: flex-end;
+    border-color: transparent;
   }
 }
 
