@@ -14,23 +14,6 @@ module.exports = {
     filename: 'js/index.js',
     path: path.resolve(__dirname, 'dist')
   },
-  plugins: [
-    new HtmlWebPackPlugin({
-      template: './src/index.html',
-      filename: './index.html'
-    }),
-    new HtmlWebPackPlugin({
-      template: './src/thanks.html',
-      filename: './thanks.html'
-    }),
-    new HtmlWebPackPlugin({
-      template: './src/404.html',
-      filename: './404.html'
-    }),
-    new ExtractTextPlugin({
-      filename: './scss/styles.css'
-    })
-  ],
   module: {
     rules: [
       {
