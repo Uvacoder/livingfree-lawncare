@@ -1,5 +1,8 @@
-(() => {
+import smoothscroll from 'smoothscroll-polyfill';
 
+(() => {
+  smoothscroll.polyfill();
+  
   let quoteSection = document.querySelector('#contact');
 
   // Scroll to Quote Section
