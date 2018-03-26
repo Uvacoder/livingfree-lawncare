@@ -1,5 +1,8 @@
 # LivingFree Lawncare Website
 
+#### Live Site Location
+https://livingfree-lawncare.com
+
 ### Install
 - clone this repo
 - cd into the cloned folder
@@ -10,3 +13,4 @@
 
 ### Build the project
 - run `npm run build` to build in the "dist/" directory
+
