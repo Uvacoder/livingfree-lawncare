@@ -23,6 +23,10 @@ module.exports = {
       template: './src/thanks.html',
       filename: './thanks.html'
     }),
+    new HtmlWebPackPlugin({
+      template: './src/404.html',
+      filename: './404.html'
+    }),
     new ExtractTextPlugin({
       filename: './scss/styles.css'
     })
@@ -99,6 +103,10 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: './src/thanks.html',
       filename: './thanks.html'
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/404.html',
+      filename: './404.html'
     }),
     new ExtractTextPlugin({
       filename: './styles.css'
